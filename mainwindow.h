@@ -19,10 +19,10 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pb_db_conn_ok_clicked();
+    void on_pb_db_conn_clicked();
 
 private:
     Ui::MainWindow *ui;
-    DialogDB* dial_db_win;
+    DialogDB* dial_db_conn;
 };
 #endif // MAINWINDOW_H

@@ -7,18 +7,18 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    dial_db_win = new DialogDB();
-    dial_db_win->setModal(true);
+    dial_db_conn = new DialogDB();
+    dial_db_conn->setModal(true);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete dial_db_win;
+    delete dial_db_conn;
 }
 
-void MainWindow::on_pb_db_conn_ok_clicked()
+void MainWindow::on_pb_db_conn_clicked()
 {
-    dial_db_win->show();
+    dial_db_conn->show();
 }
 
